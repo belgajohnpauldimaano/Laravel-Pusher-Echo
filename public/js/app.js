@@ -934,7 +934,7 @@ var app = new Vue({
             _this.usersInRoom = _this.usersInRoom.filter(function (u) {
                 return u != user;
             });
-        }).listen('.newMessage', function (e) {
+        }).listen('MessagePosted', function (e) {
             console.log(e);
             _this.messages.push(e);
         });
@@ -960,9 +960,9 @@ window._ = __webpack_require__(12);
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(14);
+    window.$ = window.jQuery = __webpack_require__(14);
 
-  __webpack_require__(15);
+    __webpack_require__(15);
 } catch (e) {}
 
 /**
@@ -984,9 +984,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
@@ -1000,10 +1000,10 @@ if (token) {
 window.Pusher = __webpack_require__(37);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-  broadcaster: 'pusher',
-  key: '43cbd06215261ec456a4',
-  cluster: 'mt1',
-  encrypted: false
+    broadcaster: 'pusher',
+    key: '43cbd06215261ec456a4',
+    cluster: 'mt1',
+    encrypted: false
 });
 
 /***/ }),
@@ -46460,7 +46460,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\wampserver64_2\\wamp64\\www\\larave-vue-pusher\\sample-app2\\resources\\assets\\js\\components\\Example.vue"
+Component.options.__file = "C:\\wamp64\\www\\Laravel-Pusher-Echo\\resources\\assets\\js\\components\\Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46471,9 +46471,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-260d0bfe", Component.options)
+    hotAPI.createRecord("data-v-7755a4db", Component.options)
   } else {
-    hotAPI.reload("data-v-260d0bfe", Component.options)
+    hotAPI.reload("data-v-7755a4db", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46537,7 +46537,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-260d0bfe", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-7755a4db", module.exports)
   }
 }
 
@@ -46558,7 +46558,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\wampserver64_2\\wamp64\\www\\larave-vue-pusher\\sample-app2\\resources\\assets\\js\\components\\AppHeader.vue"
+Component.options.__file = "C:\\wamp64\\www\\Laravel-Pusher-Echo\\resources\\assets\\js\\components\\AppHeader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] AppHeader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46569,9 +46569,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c5afb4bc", Component.options)
+    hotAPI.createRecord("data-v-82a40982", Component.options)
   } else {
-    hotAPI.reload("data-v-c5afb4bc", Component.options)
+    hotAPI.reload("data-v-82a40982", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46640,7 +46640,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c5afb4bc", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-82a40982", module.exports)
   }
 }
 
@@ -46661,7 +46661,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\wampserver64_2\\wamp64\\www\\larave-vue-pusher\\sample-app2\\resources\\assets\\js\\components\\ChatMessage.vue"
+Component.options.__file = "C:\\wamp64\\www\\Laravel-Pusher-Echo\\resources\\assets\\js\\components\\ChatMessage.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatMessage.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46672,9 +46672,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-084b93a3", Component.options)
+    hotAPI.createRecord("data-v-409b1400", Component.options)
   } else {
-    hotAPI.reload("data-v-084b93a3", Component.options)
+    hotAPI.reload("data-v-409b1400", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46712,7 +46712,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-084b93a3", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-409b1400", module.exports)
   }
 }
 
@@ -46733,7 +46733,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\wampserver64_2\\wamp64\\www\\larave-vue-pusher\\sample-app2\\resources\\assets\\js\\components\\ChatLog.vue"
+Component.options.__file = "C:\\wamp64\\www\\Laravel-Pusher-Echo\\resources\\assets\\js\\components\\ChatLog.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatLog.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46744,9 +46744,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-23af3260", Component.options)
+    hotAPI.createRecord("data-v-74f7cb3d", Component.options)
   } else {
-    hotAPI.reload("data-v-23af3260", Component.options)
+    hotAPI.reload("data-v-74f7cb3d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46802,7 +46802,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-23af3260", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-74f7cb3d", module.exports)
   }
 }
 
@@ -46827,7 +46827,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\wampserver64_2\\wamp64\\www\\larave-vue-pusher\\sample-app2\\resources\\assets\\js\\components\\ChatComposer.vue"
+Component.options.__file = "C:\\wamp64\\www\\Laravel-Pusher-Echo\\resources\\assets\\js\\components\\ChatComposer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatComposer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46838,9 +46838,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3b5837b4", Component.options)
+    hotAPI.createRecord("data-v-50cda0f7", Component.options)
   } else {
-    hotAPI.reload("data-v-3b5837b4", Component.options)
+    hotAPI.reload("data-v-50cda0f7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46861,13 +46861,13 @@ var content = __webpack_require__(53);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(55)("196fc200", content, false);
+var update = __webpack_require__(55)("30c6486c", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3b5837b4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatComposer.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3b5837b4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatComposer.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-50cda0f7\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatComposer.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-50cda0f7\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatComposer.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47243,7 +47243,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['currentuser'],
     data: function data() {
         return {
-            messageText: 'Default'
+            messageText: ''
         };
     },
 
@@ -47303,7 +47303,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3b5837b4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-50cda0f7", module.exports)
   }
 }
 

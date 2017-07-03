@@ -54,7 +54,7 @@ const app = new Vue({
             .leaving((user) => {
                 this.usersInRoom = this.usersInRoom.filter(u => u != user);
             })
-            .listen('.newMessage', (e) => {
+            .listen('MessagePosted', (e) => {
                 console.log(e);
                 this.messages.push(e);
             })

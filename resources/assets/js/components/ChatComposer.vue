@@ -9,7 +9,7 @@
         props : ['currentuser'],
         data () {
            return {
-               messageText : 'Default'
+               messageText : ''
            };
         },
         methods : {

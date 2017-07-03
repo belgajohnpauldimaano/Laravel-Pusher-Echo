@@ -35,13 +35,14 @@ class MessagePosted implements ShouldBroadcast
         ];
     }
 
-    public function broadcastAs()
-    {
-        return 'newMessage';
-    }
+    // public function broadcastAs()
+    // {
+    //     return 'newMessage';
+    // }
 
     public function broadcastOn()
     {
-        return new Channel('messages');
+        //return new Channel('messages');
+        return new PresenceChannel('messages');
     }
 }
